@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.0.1
+@version      1.1.0
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -33,8 +33,23 @@
         border: none;
         color: white;
     }
-	
-	.node_category {
+    .popover-region-toggle::before,
+    .popover-region-toggle::after {
+        border-bottom-color: var(--background-3);
+    }
+
+    .popover-region-container {
+        background-color: var(--background-3);
+    }
+    .popover-region-footer-container {
+        background-color: var(--background-4);
+    }
+
+    .popover-region-seeall-text {
+        color: links-color !important;
+    }
+
+    .node_category {
         background-color: var(--background-3) !important;
     }
 
