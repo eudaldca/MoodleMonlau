@@ -1,34 +1,390 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      0.0.1
+@version      1.0.0
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
 @license      unlicense
-@preprocessor default
-@var color background "Background colour" #23272A
+@preprocessor stylus
+@var color links-color "Links color" #64b9b2
 ==/UserStyle== */
-
 @-moz-document domain("moodle.monlau.com") {
     :root {
-        --background: _background;
+        --background-color: #23272A;
+        --background-cards: #2B2F32;
+        --background-accent: #33373A;
+        --forms: #3B3F42;
+        --forms-disabled: #43474A;
+        --accent-dark: darken(links-color, 60%);
     }
+
     body {
-        background-color: fsdgdfg;
+        background-color: var(--background-color);
         color: white;
     }
 
-    #region-main {
-        background-color: #23272a;
+    a {
+        color: links-color !important;
     }
 
-    .card-body {
-        background-color: #23272A;
+    input {
+        background-color: var(--forms);
+        border: none;
+        color: white;
+    }
+
+    .preferences-container .preference-table tr th:nth-child(2n) {
+        background-color: var(--background-accent);
+    }
+
+    .preferences-container .preference-table tr td:nth-child(2n) {
+        background-color: var(--background-accent);
+    }
+
+    .dropdown-item.active {
+        background-color: var(--accent-dark);
+    }
+
+    .modal-content {
+        background-color: var(--background-cards);
+    }
+
+    .popover {
+        background-color: var(--background-accent);
+        color: white;
+    }
+
+    .popover-header {
+        background-color: var(--forms-disabled) !important;
+        border: none;
+    }
+
+
+    .popover-body {
+        color: white;
+    }
+
+    .popover-region-container,
+    .popover-region-footer-container {
+
+        border: none;
+        color: white !important;
+    }
+
+    .atto_info {
+        background-color: var(--forms) !important;
+        color: white;
+    }
+
+    .nav-link.active {
+        background-color: var(--background-accent) !important;
+        border: none;
+    }
+
+    .mform > .clearfix {
+        border: none !important;
+    }
+
+    .nav-link:hover {
+        border: none;
+    }
+
+    #region-main {
+        background-color: transparent;
+        border: none;
+    }
+
+    .editor_atto_toolbar > div > button,
+    .editor_atto_toolbar > div {
+        background-color: var(--background-color) !important;
+        border: none !important;
+    }
+
+    .editor_atto_toolbar > div > button:hover {
+        background-color: var(--background-cards) !important;
+        background-image: none !important;
+    }
+
+    .editor_atto_toolbar {
+        background-color: var(--background-accent) !important;
+        border: none !important;
+    }
+
+    .editor_atto_content {
+        background-color: var(--forms) !important;
+        border: none !important;
+    }
+
+    .editor_atto_content_wrap {
+        border: none;
+        background-color: transparent;
+    }
+
+    .ygtvfocus {
+        background-color: transparent !important;
+    }
+
+    .yui3-datatable-odd > td {
+        background-color: var(--background-color) !important
+    }
+
+    .fp-viewbar.disabled > a {
+        background-color: transparent;
+    }
+
+    .fp-navbar {
+        border: none !important;
+    }
+
+    .fp-content {
+        background-color: var(--background-accent) !important;
+    }
+
+    .fp-dlg-butcancel {
+        background-color: var(--forms);
+        color: white;
+    }
+
+    .fp-dlg-butcancel:hover {
+        background-color: var(--background-accent);
+        color: white;
+    }
+
+    .fp-mkdir-dlg-text > input {
+        background-color: var(--forms);
+        border: none;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .yui3-datatable-sort-indicator {
+        filter: invert(100%) contrast(500%);
+    }
+
+    .yui3-datatable-header.yui3-datatable-sortable-column {
+        background-color: var(--background-accent) !important;
+        text-shadow: none;
+        color: white !important;
+    }
+
+    .yui3-datatable-even > .yui3-datatable-cell.yui3-datatable-col-displayname,
+    .yui3-datatable-even > .yui3-datatable-col-datemodified.yui3-datatable-cell,
+    .yui3-datatable-even > .yui3-datatable-col-size.yui3-datatable-cell,
+    .yui3-datatable-even > .yui3-datatable-col-mimetype.yui3-datatable-cell {
+        background-color: var(--background-accent) !important;
+    }
+
+    .fp-vb-icons.checked,
+    .fp-vb-details.checked,
+    .fp-vb-tree.checked {
+        background-color: var(--background-color) !important;
+    }
+    .fp-filename {
+        background-color: transparent !important;
+    }
+
+    .fp-thumbnail,
+    .fp-thumbnail > img {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .closebutton {
+        text-shadow: none !important;
+        color: white !important;
+        background-image: none;
+    }
+
+    .moodle-dialogue-hd > h3,
+    .moodle-dialogue-hd {
+        color: white !important;
+    }
+
+    .form-group > .form-inline {
+        background-color: transparent;
+    }
+
+    .moodle-dialogue-wrap.moodle-dialogue-content {
+        background-color: var(--background-cards) !important;
     }
 
     .card {
-        border-color: black;
+        background-color: var(--background-accent);
+    }
+
+    .table,
+    table.collection,
+    table.flexible,
+    .generaltable {
+        color: white;
+    }
+
+    .card-footer,
+    .description.card-body {
+        background-color: var(--background-accent) !important;
+    }
+
+    .bg-dark {
+        background-color: var(--background-cards) !important;
+    }
+
+    .badge {
+        background-color: links-color;
+    }
+
+    .generaltable {
+        color: white;
+    }
+
+    tr:hover {
+        /*who tf thought it was a good idea to incorporate hover shadows in tables????*/
+        color: white !important;
+        background-color: transparent !important;
+    }
+
+    .path-mod-assign td.earlysubmission,
+    .path-mod-assign div.earlysubmission {
+        color: white;
+    }
+
+    .path-mod-assign td.submissionstatussubmitted,
+    .path-mod-assign div.submissionstatussubmitted,
+    .path-mod-assign a:link.submissionstatussubmitted {
+        color: black !important;
+    }
+
+    .ct-activity-due-date {
+        background-color: links-color !important;
+    }
+
+    .ct-activity-due-date > a > i,
+    .ct-activity-due-date > a {
+        color: white !important;
+    }
+
+    .sectionhead {
+        background-color: links-color !important;
+    }
+
+    .logo > img {
+        /* Totally not the hackiest thing I've done in my life. Please look elsewhere while I thank https://github.com/stylish-userstyles/stylish/wiki/Replacing-images-in-img-tags */
+        height: 0 !important;
+        width: 0 !important;
+        padding-left: 100px !important;
+        padding-top: 45px !important;
+        background: url(https://i.imgur.com/4OjFtzk.png) no-repeat !important;
+    }
+
+    #page-my-index {
+        background-color: var(--background-color);
+    }
+
+    .list-group-item {
+        background-color: var(--background-cards);
+    }
+
+    .dropdown-menu {
+        background-color: var(--background-accent);
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: var(--background-color);
+    }
+
+    .dropdown-divider {
+        border-top-color: grey;
+    }
+
+    .btn-block,
+    .btn-primary {
+        background-color: links-color;
+        border: none;
+        color: white;
+    }
+
+    .btn-block:hover,
+    .btn-primary:hover {
+        background-color: darken(links-color, 15%);
+        color: white;
+    }
+
+    .btn-secondary,
+    .btn-outline-secondary {
+        background-color: var(--forms);
+        border: none;
+        color: white;
+    }
+
+    .btn-secondary:hover,
+    .btn-outline-secondary:hover {
+        background-color: var(--forms-disabled);
+        color: white;
+    }
+
+    .navbar {
+        background-color: var(--background-cards);
+    }
+
+    .nav-link,
+    {
+        color: white !important;
+    }
+
+    .singleselect,
+    .custom-select,
+    .custom-select:disabled {
+        background-color: var(--background-accent);
+        border: none;
+        color: white;
+    }
+
+    .breadcrumb {
+        background-color: transparent !important;
+    }
+
+    .breadcrumb-item {
+        text-shadow: none !important;
+    }
+
+    .region-main-content {
+        background-color: var(--background-cards) !important;
+    }
+
+    .form-inline {
+        background-color: var(--background-cards);
+    }
+
+    .icon {
+        color: links-color !important;
+    }
+
+    .card-header {
+        background-color: var(--background-accent);
+    }
+
+    .card-body {
+        background-color: var(--background-cards);
+    }
+
+    .form-control {
+        background-color: var(--forms);
+        color: white;
+        border: none;
+    }
+
+    .form-control:disabled {
+        background-color: var(--background-color);
+    }
+
+    .form-control:focus {
+        background-color: var(--forms);
+        color: white;
+    }
+
+    .card {
+        border: none;
     }
 
     .block {
@@ -80,19 +436,6 @@
     a:active,
     span.flagged-tag a {
         color: #6e8cf3;
-    }
-
-    .path-grade-report-user .user-grade.generaltable .levelodd {
-        background-color: #f9f9f900;
-    }
-
-    #pageheader-middle-right {
-        min-height: 68px;
-        background-color: #4b5b94;
-    }
-
-    #pageheader-middle-left {
-        background-color: #7289DA;
     }
 
     .calendar_event_course {
