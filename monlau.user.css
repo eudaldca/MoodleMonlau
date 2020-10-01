@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.0.0
+@version      1.0.1
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -11,16 +11,16 @@
 ==/UserStyle== */
 @-moz-document domain("moodle.monlau.com") {
     :root {
-        --background-color: #23272A;
-        --background-cards: #2B2F32;
-        --background-accent: #33373A;
-        --forms: #3B3F42;
-        --forms-disabled: #43474A;
+        --background-1: #23272A;
+        --background-2: #2B2F32;
+        --background-3: #33373A;
+        --background-4: #3B3F42;
+        --background-5: #43474A;
         --accent-dark: darken(links-color, 60%);
     }
 
     body {
-        background-color: var(--background-color);
+        background-color: var(--background-1);
         color: white;
     }
 
@@ -29,21 +29,21 @@
     }
 
     input {
-        background-color: var(--forms);
+        background-color: var(--background-4);
         border: none;
         color: white;
     }
 	
 	.node_category {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
     }
 
     .preferences-container .preference-table tr th:nth-child(2n) {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
     }
 
     .preferences-container .preference-table tr td:nth-child(2n) {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
     }
 
     .dropdown-item.active {
@@ -51,16 +51,16 @@
     }
 
     .modal-content {
-        background-color: var(--background-cards);
+        background-color: var(--background-2);
     }
 
     .popover {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
         color: white;
     }
 
     .popover-header {
-        background-color: var(--forms-disabled) !important;
+        background-color: var(--background-5) !important;
         border: none;
     }
 
@@ -77,12 +77,12 @@
     }
 
     .atto_info {
-        background-color: var(--forms) !important;
+        background-color: var(--background-4) !important;
         color: white;
     }
 
     .nav-link.active {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
         border: none;
     }
 
@@ -101,22 +101,22 @@
 
     .editor_atto_toolbar > div > button,
     .editor_atto_toolbar > div {
-        background-color: var(--background-color) !important;
+        background-color: var(--background-1) !important;
         border: none !important;
     }
 
     .editor_atto_toolbar > div > button:hover {
-        background-color: var(--background-cards) !important;
+        background-color: var(--background-2) !important;
         background-image: none !important;
     }
 
     .editor_atto_toolbar {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
         border: none !important;
     }
 
     .editor_atto_content {
-        background-color: var(--forms) !important;
+        background-color: var(--background-4) !important;
         border: none !important;
     }
 
@@ -130,7 +130,7 @@
     }
 
     .yui3-datatable-odd > td {
-        background-color: var(--background-color) !important
+        background-color: var(--background-1) !important
     }
 
     .fp-viewbar.disabled > a {
@@ -142,21 +142,21 @@
     }
 
     .fp-content {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
     }
 
     .fp-dlg-butcancel {
-        background-color: var(--forms);
+        background-color: var(--background-4);
         color: white;
     }
 
     .fp-dlg-butcancel:hover {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
         color: white;
     }
 
     .fp-mkdir-dlg-text > input {
-        background-color: var(--forms);
+        background-color: var(--background-4);
         border: none;
         color: white;
         border-radius: 3px;
@@ -167,7 +167,7 @@
     }
 
     .yui3-datatable-header.yui3-datatable-sortable-column {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
         text-shadow: none;
         color: white !important;
     }
@@ -176,13 +176,13 @@
     .yui3-datatable-even > .yui3-datatable-col-datemodified.yui3-datatable-cell,
     .yui3-datatable-even > .yui3-datatable-col-size.yui3-datatable-cell,
     .yui3-datatable-even > .yui3-datatable-col-mimetype.yui3-datatable-cell {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
     }
 
     .fp-vb-icons.checked,
     .fp-vb-details.checked,
     .fp-vb-tree.checked {
-        background-color: var(--background-color) !important;
+        background-color: var(--background-1) !important;
     }
     .fp-filename {
         background-color: transparent !important;
@@ -210,11 +210,11 @@
     }
 
     .moodle-dialogue-wrap.moodle-dialogue-content {
-        background-color: var(--background-cards) !important;
+        background-color: var(--background-2) !important;
     }
 
     .card {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
     }
 
     .table,
@@ -226,11 +226,11 @@
 
     .card-footer,
     .description.card-body {
-        background-color: var(--background-accent) !important;
+        background-color: var(--background-3) !important;
     }
 
     .bg-dark {
-        background-color: var(--background-cards) !important;
+        background-color: var(--background-2) !important;
     }
 
     .badge {
@@ -281,20 +281,20 @@
     }
 
     #page-my-index {
-        background-color: var(--background-color);
+        background-color: var(--background-1);
     }
 
     .list-group-item {
-        background-color: var(--background-cards);
+        background-color: var(--background-2);
     }
 
     .dropdown-menu {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
     }
 
     .dropdown-item:hover,
     .dropdown-item:focus {
-        background-color: var(--background-color);
+        background-color: var(--background-1);
     }
 
     .dropdown-divider {
@@ -316,19 +316,19 @@
 
     .btn-secondary,
     .btn-outline-secondary {
-        background-color: var(--forms);
+        background-color: var(--background-4);
         border: none;
         color: white;
     }
 
     .btn-secondary:hover,
     .btn-outline-secondary:hover {
-        background-color: var(--forms-disabled);
+        background-color: var(--background-5);
         color: white;
     }
 
     .navbar {
-        background-color: var(--background-cards);
+        background-color: var(--background-2);
     }
 
     .nav-link,
@@ -339,7 +339,7 @@
     .singleselect,
     .custom-select,
     .custom-select:disabled {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
         border: none;
         color: white;
     }
@@ -353,11 +353,11 @@
     }
 
     .region-main-content {
-        background-color: var(--background-cards) !important;
+        background-color: var(--background-2) !important;
     }
 
     .form-inline {
-        background-color: var(--background-cards);
+        background-color: var(--background-2);
     }
 
     .icon {
@@ -365,25 +365,25 @@
     }
 
     .card-header {
-        background-color: var(--background-accent);
+        background-color: var(--background-3);
     }
 
     .card-body {
-        background-color: var(--background-cards);
+        background-color: var(--background-2);
     }
 
     .form-control {
-        background-color: var(--forms);
+        background-color: var(--background-4);
         color: white;
         border: none;
     }
 
     .form-control:disabled {
-        background-color: var(--background-color);
+        background-color: var(--background-1);
     }
 
     .form-control:focus {
-        background-color: var(--forms);
+        background-color: var(--background-4);
         color: white;
     }
 
