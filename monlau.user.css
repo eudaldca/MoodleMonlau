@@ -33,6 +33,10 @@
         border: none;
         color: white;
     }
+	
+	.node_category {
+        background-color: var(--background-accent) !important;
+    }
 
     .preferences-container .preference-table tr th:nth-child(2n) {
         background-color: var(--background-accent);
