@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.1.4
+@version      1.2.0
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -33,11 +33,61 @@
         border: none;
         color: white;
     }
-    
+
+    .moodle-exception-param.param-stacktrace > label {
+        background-color: var(--background-4) !important;
+        border: none;
+    }
+
+    .moodle-exception-param.param-stacktrace > pre {
+        background-color: var(--background-3) !important;
+        color: white;
+        border: none;
+    }
+
+    .alert-danger {
+        background-color: #D32F2F;
+        color: white;
+    }
+
+    .alert-danger > p > a {
+        color: lightblue !important;
+        text-decoration: underline;
+    }
+
+    .alert-warning {
+        background-color: #F57C00;
+        color: white;
+    }
+
+    .db > textarea {
+        background-color: var(--background-3);
+        border: none;
+        color: white !important;
+    }
+
+    .submissionreopened {
+        background-color: transparent !important;
+        color: white !important;
+    }
+
+    .latesubmission,
+    .gradingreminder {
+        background-color: #D32F2F !important;
+        color: white !important;
+    }
+
+    .submissionstatussubmitted,
+    .submissiongraded,
+    .earlysubmission {
+        background-color: #388E3C !important;
+        color: white !important;
+    }
+
     .dndupload-target {
         background-color: var(--background-4) !important;
     }
-    
+
     .popover-region-toggle::before,
     .popover-region-toggle::after {
         border-bottom-color: var(--background-3);
@@ -272,12 +322,6 @@
         color: white;
     }
 
-    .path-mod-assign td.submissionstatussubmitted,
-    .path-mod-assign div.submissionstatussubmitted,
-    .path-mod-assign a:link.submissionstatussubmitted {
-        color: black !important;
-    }
-
     .ct-activity-due-date > a > i,
     .ct-activity-due-date > a {
         color: white !important;
@@ -326,12 +370,14 @@
     }
 
     .btn-block:hover,
-    .btn-primary:hover {
-        background-color: darken(links-color, 15%);
+    .btn-primary:hover,
+    .btn-block:active,
+    .btn-primary:active {
+        background-color: darken(links-color, 15%) !important;
         color: white;
     }
-	
-	.btn-block.disabled,
+
+    .btn-block.disabled,
     .btn-primary.disabled,
     .btn-block:disabled,
     .btn-primary:disabled {
@@ -346,15 +392,17 @@
     }
 
     .btn-secondary:hover,
-    .btn-outline-secondary:hover {
-        background-color: var(--background-5);
-        color: white;
+    .btn-outline-secondary:hover,
+    .btn-secondary:active,
+    .btn-outline-secondary:active {
+        background-color: var(--background-5) !important;
+        color: white !important;
     }
-	
-	.btn-secondary:disabled,
+
+    .btn-secondary:disabled,
     .btn-outline-secondary:disabled,
     .btn-secondary.disabled,
-    .btn-outline-secondary.disabled{
+    .btn-outline-secondary.disabled {
         background-color: var(--background-5);
         color: white;
     }
