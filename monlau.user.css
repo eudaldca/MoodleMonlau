@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.2.0
+@version      1.2.1
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -375,6 +375,10 @@
     .btn-primary:active {
         background-color: darken(links-color, 15%) !important;
         color: white;
+    }
+    .btn-block:focus,
+    .btn-primary:focus {
+        box-shadow: 0 0 0 .2rem rgba(links-color, .5)
     }
 
     .btn-block.disabled,
