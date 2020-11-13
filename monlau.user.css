@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.2.1
+@version      1.2.2
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -33,6 +33,13 @@
         border: none;
         color: white;
     }
+
+    button.close {
+        color: white;
+        opacity: 1;
+        text-shadow: none;
+    }
+
 
     .moodle-exception-param.param-stacktrace > label {
         background-color: var(--background-4) !important;
