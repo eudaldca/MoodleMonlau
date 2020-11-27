@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.2.2
+@version      1.3.0
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -9,7 +9,8 @@
 @preprocessor stylus
 @var color links-color "Links color" #64b9b2
 ==/UserStyle== */
-@-moz-document domain("moodle.monlau.com") {
+@-moz-document domain("moodle.monlau.com"),
+domain("home.monlau.com") {
     :root {
         --background-1: #23272A;
         --background-2: #2B2F32;
@@ -17,6 +18,16 @@
         --background-4: #3B3F42;
         --background-5: #43474A;
         --accent-dark: darken(links-color, 60%);
+    }
+
+    center > input#search-box {
+        border: none !important;
+    }
+
+    div#button-container > input {
+        color: white;
+        background-color: var(--background-3);
+        border: none;
     }
 
     body {
