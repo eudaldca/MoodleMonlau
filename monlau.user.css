@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.3.0
+@version      1.3.1
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -19,6 +19,19 @@ domain("home.monlau.com") {
         --background-5: #43474A;
         --accent-dark: darken(links-color, 60%);
     }
+    
+    .ct-activity-date-nearly-due {
+        background-color: #f39c12 !important;
+    }
+    
+    .ct-activity-date-overdue {
+        background-color: #e74c3c !important;
+    }
+    
+    .ct-activity-date-submitted {
+        background-color: #00bc8c !important;
+    }
+
 
     center > input#search-box {
         border: none !important;
