@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.3.3
+@version      1.3.4
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -18,6 +18,10 @@ domain("home.monlau.com") {
         --background-4: #3B3F42;
         --background-5: #43474A;
         --accent-dark: darken(links-color, 60%);
+    }
+    
+    .yui3-resize-handle {
+        background-color: var(--background-5);
     }
     
     div.yui3-treeview-row {
