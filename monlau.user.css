@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Monlau Moodle dark
 @namespace    https://eudald.me
-@version      1.3.2
+@version      1.3.3
 @author       Eudald Cardona
 @homepageURL  https://github.com/eudaldca/moodlemonlau
 @description  Monlau's Moodle dark theme
@@ -9,7 +9,7 @@
 @preprocessor stylus
 @var color links-color "Links color" #64b9b2
 ==/UserStyle== */
-@-moz-document domain("moodle.monlau.com"),
+@-moz-document regexp("^https:\\/\\/moodle\\.monlau\\.com\\/((?!course\\.htm).)*"),
 domain("home.monlau.com") {
     :root {
         --background-1: #23272A;
